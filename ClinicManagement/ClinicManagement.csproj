@@ -253,6 +253,15 @@
     <Compile Include="Core\ViewModel\AppointmentFormViewModel.cs" />
     <Compile Include="Core\ViewModel\DoctorDetailViewModel.cs" />
     <Compile Include="Core\ViewModel\ValidDate.cs" />
+    <Compile Include="Migrations\202304140935048_InitialDb.cs" />
+    <Compile Include="Migrations\202304140935048_InitialDb.Designer.cs">
+      <DependentUpon>202304140935048_InitialDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304140937517_InitialDb1.cs" />
+    <Compile Include="Migrations\202304140937517_InitialDb1.Designer.cs">
+      <DependentUpon>202304140937517_InitialDb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\EntityConfigurations\AppointmentConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\CityConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\DoctorConfiguration.cs" />
@@ -1117,6 +1126,14 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202304140935048_InitialDb.resx">
+      <DependentUpon>202304140935048_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304140937517_InitialDb1.resx">
+      <DependentUpon>202304140937517_InitialDb1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
