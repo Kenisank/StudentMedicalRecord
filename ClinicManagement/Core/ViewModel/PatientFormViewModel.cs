@@ -43,8 +43,12 @@ namespace ClinicManagement.Core.ViewModel
             //return DateTime.ParseExact(BirthDate, "dd/MM/yyyy", CultureInfo.CurrentCulture);
         }
 
+        
         public IEnumerable<City> Cities { get; set; }
 
+        [Required]
+        public string RegNo { get; set; }
+        
 
 
         public string Action

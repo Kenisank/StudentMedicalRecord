@@ -122,6 +122,11 @@ namespace ClinicManagement
         {
             var user = UserManager.FindByEmailAsync(userName).Result;
 
+
+            if (user == null)
+                return Task.FromResult<SignInStatus>(SignInStatus.Failure);
+
+
             if ((user.IsActive.HasValue && !user.IsActive.HasValue) || !user.IsActive.HasValue)
                 return Task.FromResult<SignInStatus>(SignInStatus.LockedOut);
 

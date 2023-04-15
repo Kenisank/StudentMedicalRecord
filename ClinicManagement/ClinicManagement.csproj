@@ -261,6 +261,10 @@
     <Compile Include="Migrations\202304140937517_InitialDb1.Designer.cs">
       <DependentUpon>202304140937517_InitialDb1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304151748512_Add Dept.cs" />
+    <Compile Include="Migrations\202304151748512_Add Dept.Designer.cs">
+      <DependentUpon>202304151748512_Add Dept.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\EntityConfigurations\AppointmentConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\CityConfiguration.cs" />
@@ -670,9 +674,12 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
+    <Content Include="download.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image2vector.svg" />
+    <Content Include="R.svg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bloodhound.js" />
@@ -1133,6 +1140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304140937517_InitialDb1.resx">
       <DependentUpon>202304140937517_InitialDb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304151748512_Add Dept.resx">
+      <DependentUpon>202304151748512_Add Dept.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

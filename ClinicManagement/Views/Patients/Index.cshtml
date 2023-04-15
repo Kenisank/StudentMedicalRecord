@@ -17,11 +17,11 @@
                 <table id="patients" class="data table table-striped no-margin">
                     <thead>
                         <tr>
-                            <th>Token</th>
+                            <th>T.Ship No</th>
                             <th>Name</th>
                             <th>Phone</th>
-                            <th>Address</th>
-                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Reg. No. </th>
                             <th><a href="@Url.Action("Create","Patients")" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i>Add</a></th>
 
                         </tr>
@@ -60,10 +60,10 @@
                         }
                     },
                     {
-                        data: "address"
+                        data: "cities.name"
                     },
                     {
-                        data: "cities.name"
+                        data: "regNo"
                     },
                     {
                         data: "id",

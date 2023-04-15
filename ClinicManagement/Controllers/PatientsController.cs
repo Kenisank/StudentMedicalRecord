@@ -72,6 +72,7 @@ namespace ClinicManagement.Controllers
                 Weight = viewModel.Weight,
                 CityId = viewModel.City,
                 Sex = viewModel.Sex,
+                RegNo= viewModel.RegNo,
                 Token = (2018 + _unitOfWork.Patients.GetPatients().Count()).ToString().PadLeft(7, '0')
             };
 
