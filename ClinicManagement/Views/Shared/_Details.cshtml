@@ -70,7 +70,7 @@
                     <tbody>
 
 
-                        @foreach (var item in Model.OpdAttendances)
+                        @foreach (var item in Model.Attendances)
                         {
                             <tr>
                                 <td>@item.ClinicRemarks</td>
@@ -79,7 +79,7 @@
                                 <td>@item.ThirdDiagnosis</td>
                                 <td>@item.Therapy</td>
                                 <td>@item.Date.ToString("d")</td>
-                                <td>@Model.Patient.Doctor.Name</td>
+                                @*<td>@item.</td>*@
 
                             </tr>
 
